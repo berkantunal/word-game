@@ -1,0 +1,7 @@
+{
+  "printWidth": 100,
+  "valid-typeof": false,
+  "semi": false,
+  "arrowParens": "always",
+  "singleQuote": true
+}

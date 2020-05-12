@@ -1,0 +1,36 @@
+@keyframes gamerAnswerActiveAnimate {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.gamer-answer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: capitalize;
+
+  &.gamer-answer-active {
+    color: #f44336;
+    animation: gamerAnswerActiveAnimate 500ms infinite;
+  }
+
+  &.gamer-answer-top {
+    top: 100px;
+  }
+
+  &.gamer-answer-bottom {
+    bottom: 100px;
+  }
+}
