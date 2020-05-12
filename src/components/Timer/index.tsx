@@ -7,7 +7,7 @@ type Props = JSX.IntrinsicElements['div'] & {
   onTimeout: Function
 }
 
-const Timer: FC<Props> = ({ className, duration, onTimeout, ...props }: Props) => {
+const Timer: FC<Props> = ({ className, duration, onTimeout }: Props) => {
   const [number, setNumber] = useState(0)
   const [animate, setAnimate] = useState(false)
 
@@ -38,7 +38,7 @@ const Timer: FC<Props> = ({ className, duration, onTimeout, ...props }: Props) =
   }, [])
 
   return (
-    <div className={cx('timer', className)} {...props}>
+    <div className={cx('timer', className)}>
       <div className={cx('timer-number', { 'timer-number-animate': animate })}>{number}</div>
     </div>
   )

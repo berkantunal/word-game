@@ -6,9 +6,9 @@ type Props = JSX.IntrinsicElements['div'] & {
   history: string[]
 }
 
-const AnswerHistory: FC<Props> = ({ className, history, ...props }: Props) => {
+const AnswerHistory: FC<Props> = ({ className, history }: Props) => {
   return (
-    <div className={cx('answers', className)} {...props}>
+    <div className={cx('answers', className)}>
       <div className="h4">CEVAPLAR</div>
       <ul className="list-unstyled">
         {history.map((answer, index) => (

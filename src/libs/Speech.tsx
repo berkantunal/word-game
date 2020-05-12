@@ -5,10 +5,10 @@ declare global {
 }
 
 class Speech {
-  public result: string | undefined
-  public onComplete: Function | undefined
-  public recognition: any
-  public listenTimeout: ReturnType<typeof setTimeout> | undefined
+  result: string | undefined
+  onComplete: Function | undefined
+  recognition: any
+  listenTimeout: ReturnType<typeof setTimeout> | undefined
 
   constructor() {
     if (!this.isAvailable()) {

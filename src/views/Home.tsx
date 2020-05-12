@@ -10,7 +10,7 @@ import * as Game from '../utils/Game'
 
 import Speech from '../libs/Speech'
 
-type Props = JSX.IntrinsicElements['button'] & {
+type Props = {
   speech: Speech
 }
 
@@ -67,6 +67,7 @@ class Home extends Component<Props, State> {
 
   setAnswer(whose: string, answer: string) {
     const history = this.addAnswerToHistory(answer)
+
     this.setState(({ answers }) => ({
       answers: { ...answers, [whose]: answer },
       history,
