@@ -25,8 +25,8 @@ type State = {
 }
 
 class Home extends Component<Props, State> {
-  duration = 5 // 5 seconds
-  mistakeProbability = 20 // 20 percent
+  duration = 8 // 8 seconds
+  mistakeProbability = 30 // 30 percent
   speech: Speech
 
   constructor(props: Props) {

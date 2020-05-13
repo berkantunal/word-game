@@ -33,7 +33,7 @@ class Speech {
     return await navigator.mediaDevices.getUserMedia({ audio: true })
   }
 
-  listen(duration = 5) {
+  listen(duration = 8) {
     this.clear()
     this.recognition.start()
     this.setListenTimeout(duration)
